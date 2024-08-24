@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PortfolioApp" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">#1DB66F</item>
+    </style>
+
+</resources>
+
+
+<!--    29c47c-->
