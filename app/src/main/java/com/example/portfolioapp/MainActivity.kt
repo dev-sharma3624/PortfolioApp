@@ -37,6 +37,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
@@ -83,7 +84,7 @@ fun Background(){
         ){
             //Text
             Text(
-                text = "Dev Sharma",
+                text = "Satoru Gojo",
                 color = Color.White,
                 fontFamily = FontFamily.SansSerif,
                 fontSize = 32.sp,
@@ -161,12 +162,14 @@ fun Background(){
         contentAlignment = Alignment.BottomCenter
     ){
         Image(
-            painter = painterResource(id = R.drawable.profile_image),
+            painter = painterResource(id = R.drawable.profile_image1),
             contentDescription = null,
             modifier = Modifier
                 .clip(CircleShape)
                 .size(155.dp)
                 .border(6.dp, Color.White, shape = CircleShape)
+                .background(color = Color.White),
+            contentScale = ContentScale.FillWidth
         )
     }
 
